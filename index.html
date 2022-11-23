@@ -19,13 +19,14 @@
             width: 800px;
             margin-top: 40px;
             margin-left: calc((100% - 800px) / 2);
-            font-family: Tahoma;
+            font-family: Arial;
         }
 
         header>div {
             height: 40px;
-            font-size: 25px;
+            font-size: 30px;
             float: left;
+            margin: 0;
         }
 
         header>nav {
@@ -36,11 +37,68 @@
             margin-left: 50px;
             font-size: 18px;
             text-decoration: none;
+            color: black;
         }
 
         nav>a:first-child {
             margin-left: 0;
         }
+
+        main {
+            display: inline-block;
+            width: 800px;
+            margin-top: 40px;
+            margin-left: calc((100% - 800px) / 2);
+            font-family: Arial;
+        }
+
+        main>div {
+            width: 40%;
+            float: left;
+        }
+
+        main>img {
+            width: 55%;
+            float: right;
+        }
+
+        main>div>h1 {
+            margin: 0;
+            font-size: 70px;
+            height: 70px;
+            border-bottom: 3px solid black;
+            padding-bottom: 15px;
+        }
+
+        main>div>h1:first-child {
+            margin-top: 100px;
+            font-weight: normal;
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        main>div>div:last-child {
+            margin-top: 35px;
+        }
+
+        main>div>div>a {
+            text-decoration: none; 
+            font-size: 17px; 
+            font-family: Arial; 
+            border: 2px solid lightblue; 
+            padding: 7px; 
+            padding-left: 30px; 
+            padding-right: 30px;  
+            border-radius: 21px;
+            font-weight: bold;
+            color: black;
+        }
+
+        main>div>div>a:first-child {
+            background-color: lightblue;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
@@ -55,8 +113,17 @@
     </header>
 
     <main>
-        <div>Left side content</div>
-        <img>
+        <div>
+            <h1>404</h1>
+            <h1>Oops!</h1>
+            <div>-----</div>
+            <p>Ok this is awkward, but I don't think you should be here.</p>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Back</a>
+            </div>
+        </div>
+        <img src="./img/cat.png" alt="Cat">
     </main>
 </body>
 </html>
