@@ -13,11 +13,45 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>Cat</title>
+    <style>
+        header {
+            display: inline-block;
+            width: 800px;
+            margin-top: 40px;
+            margin-left: calc((100% - 800px) / 2);
+            font-family: Tahoma;
+        }
+
+        header>div {
+            height: 40px;
+            font-size: 25px;
+            float: left;
+        }
+
+        header>nav {
+            float: right;
+        }
+
+        nav>a {
+            margin-left: 50px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        nav>a:first-child {
+            margin-left: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div></div>
-        <nav></nav>
+        <div>Pawz</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
     </header>
 
     <main>
