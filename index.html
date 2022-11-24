@@ -65,20 +65,28 @@
         main>div>h1 {
             margin: 0;
             font-size: 70px;
-            height: 70px;
-            border-bottom: 3px solid black;
-            padding-bottom: 15px;
-        }
-
-        main>div>h1:first-child {
             margin-top: 100px;
             font-weight: normal;
-            border-bottom: 0;
-            padding-bottom: 0;
+            line-height: 60px;
+        }
+
+        span {
+            font-weight: bold;
         }
         
         main>div>div:last-child {
             margin-top: 35px;
+        }
+
+        hr {
+            margin-top: 15px;
+            width: 165px;
+            margin-left: 0;
+            border: 0;
+            border-radius: 5px;
+            color: #6ABDDD;
+            background-color: #6ABDDD;
+            height: 5px;
         }
 
         main>div>div>a {
@@ -114,9 +122,8 @@
 
     <main>
         <div>
-            <h1>404</h1>
-            <h1>Oops!</h1>
-            <div>-----</div>
+            <h1>404 <span>Oops!</span></h1>
+            <hr>
             <p>Ok this is awkward, but I don't think you should be here.</p>
             <div>
                 <a href="#">Home</a>
