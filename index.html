@@ -12,125 +12,33 @@
     <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Cat</title>
-    <style>
-        header {
-            display: inline-block;
-            width: 800px;
-            margin-top: 40px;
-            margin-left: calc((100% - 800px) / 2);
-            font-family: Arial;
-        }
 
-        header>div {
-            height: 40px;
-            font-size: 30px;
-            float: left;
-            margin: 0;
-        }
-
-        header>nav {
-            float: right;
-        }
-
-        nav>a {
-            margin-left: 50px;
-            font-size: 18px;
-            text-decoration: none;
-            color: black;
-        }
-
-        nav>a:first-child {
-            margin-left: 0;
-        }
-
-        main {
-            display: inline-block;
-            width: 800px;
-            margin-top: 40px;
-            margin-left: calc((100% - 800px) / 2);
-            font-family: Arial;
-        }
-
-        main>div {
-            width: 40%;
-            float: left;
-        }
-
-        main>img {
-            width: 55%;
-            float: right;
-        }
-
-        main>div>h1 {
-            margin: 0;
-            font-size: 70px;
-            margin-top: 100px;
-            font-weight: normal;
-            line-height: 60px;
-        }
-
-        span {
-            font-weight: bold;
-        }
-        
-        main>div>div:last-child {
-            margin-top: 35px;
-        }
-
-        hr {
-            margin-top: 15px;
-            width: 165px;
-            margin-left: 0;
-            border: 0;
-            border-radius: 5px;
-            color: #6ABDDD;
-            background-color: #6ABDDD;
-            height: 5px;
-        }
-
-        main>div>div>a {
-            text-decoration: none; 
-            font-size: 17px; 
-            font-family: Arial; 
-            border: 2px solid lightblue; 
-            padding: 7px; 
-            padding-left: 30px; 
-            padding-right: 30px;  
-            border-radius: 21px;
-            font-weight: bold;
-            color: black;
-        }
-
-        main>div>div>a:first-child {
-            background-color: lightblue;
-            color: white;
-        }
-
-    </style>
 </head>
+
 <body>
-    <header>
-        <div>Pawz</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
+    <header class="main-header">
+        <div class="logo">Pawz</div>
+        <nav class="main-nav">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Products</a>
+            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#">Contact Us</a>
         </nav>
     </header>
 
-    <main>
-        <div>
-            <h1>404 <span>Oops!</span></h1>
-            <hr>
-            <p>Ok this is awkward, but I don't think you should be here.</p>
-            <div>
-                <a href="#">Home</a>
-                <a href="#">Back</a>
+    <main class="main-content">
+        <div class="left-column">
+            <h1 class="main-title">404 <span>Oops!</span></h1>
+            <hr class="main-content-seperator">
+            <p class="description">Ok this is awkward, but I don't think you should be here.</p>
+            <div class="main-buttons">
+                <a class="btn" href="#">Home</a>
+                <a class="btn" href="#">Back</a>
             </div>
         </div>
-        <img src="./img/cat.png" alt="Cat">
+        <img class="right-column" src="./img/cat.png" alt="Cat">
     </main>
 </body>
 </html>
