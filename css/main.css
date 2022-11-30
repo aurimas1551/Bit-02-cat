@@ -1,20 +1,17 @@
+body {
+    margin-left: calc((100% - 800px) / 2);
+}
+
 .main-header {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     width: 800px;
     margin-top: 40px;
-    margin-left: calc((100% - 800px) / 2);
     font-family: Arial;
 }
 
 .logo {
-    height: 40px;
     font-size: 30px;
-    float: left;
-    margin: 0;
-}
-
-.main-nav {
-    float: right;
 }
 
 .nav-link {
@@ -29,27 +26,27 @@
 }
 
 .main-content {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     width: 800px;
     margin-top: 40px;
-    margin-left: calc((100% - 800px) / 2);
     font-family: Arial;
 }
 
 .left-column {
     width: 40%;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .right-column {
     width: 55%;
-    float: right;
 }
 
 .main-title {
     margin: 0;
     font-size: 70px;
-    margin-top: 100px;
     font-weight: normal;
     line-height: 60px;
 }
@@ -86,7 +83,7 @@ span {
     color: black;
 }
 
-.btn:first-child {
+.home-btn {
     background-color: lightblue;
     color: white;
 }
